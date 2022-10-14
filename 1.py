@@ -1,9 +1,8 @@
 print("Добро пожаловать в первое домашнее задание")
-name = str(input("Введите имя: "))
+name = input("Введите имя: ")
 surname = str(input("Введите фамилию: "))
 age = float(input("Введите возраст: "))
-print(name,"_",surname,"_",age)
-name2= surname
-surname2 = name
+print(name + "_" + surname + "_" + str(age))
+name, surname = surname, name
 age = age+60
-print(name2,"_",surname2,"_",age)
+print(name + "_" + surname + "_" + str(age))
